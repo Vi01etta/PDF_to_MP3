@@ -6,8 +6,6 @@ from pathlib import Path
 
 def pdf_to_mp3(file_path="test.pdf", language='ru'):
 
-    #Проверяем, что файл существует и имеет нужный формат
-
     if Path(file_path).is_file() and  Path(file_path).suffix == '.pdf':
         print(f'[+] Original file: {Path(file_path).name}')
         print(f'[+] Processing....')
